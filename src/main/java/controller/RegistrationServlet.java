@@ -17,7 +17,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 @WebServlet("/register")
-//@WebServlet(name = "RegistrationServlet", value = "/register")
 
 public class RegistrationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -45,6 +44,7 @@ public class RegistrationServlet extends HttpServlet {
         out.println("<html>" +
                 "<body>" +
                 "<h2>Registration Successful</h2><br/>" +
+                "<a href='ViewServlet'>view Students</a>" +
                 "</body>" +
                 "</html>");
     }
